@@ -1,0 +1,328 @@
+#logo{
+    width: 45px;
+}
+#heading{
+    font-weight: bolder;
+    font-size: 28px;
+    margin: 0px;
+}
+#nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.4;
+    width: 100%;
+    height: 80px;
+    border-radius: 15px;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+#home::before{
+    content: "";
+    background: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.6; */
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height:299px;
+    border-radius: 15px;
+}
+#home{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#welcome{
+    font-style: oblique;
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #afeeee;
+}
+#subwelcome{
+    font-weight: bold;
+    font-size: 25px;
+    font-style: oblique ;
+    color: blanchedalmond;
+}
+
+
+/* under 10k */
+
+#tenk{
+    margin-top: 75px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+#tenk h1{
+    text-align: center;
+}
+#tenkcontainer{
+    margin-top: 30px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+.tenkboxes{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 25px;
+    background-color: #e0e0e4;
+}
+.tenkboxes p{
+    font-size: medium;
+}
+.imgtenk{
+    width: 150px;
+}
+
+/* under 15k */
+
+#fifk h1{
+    text-align: center;
+}
+#fifk{
+    border: 2px solid black;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.fifkboxes{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 25px;
+    background-color: #e0e0e4;
+}
+#fifkcontainer{
+    display: flex;
+    justify-content: space-around;
+}
+.imgfifk{
+    width: 150px;
+}
+.fifkboxes p{
+    font-size: medium;
+}
+
+/* under 20k */
+
+#twentyk h1{
+    text-align: center;
+}
+#twentyk{
+    border: 2px solid black;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.twentykboxes{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 25px;
+    background-color: #e0e0e4;
+}
+#twentykcontainer{
+    display: flex;
+    justify-content: space-around;
+}
+.imgtwentyk{
+    width: 150px;
+}
+.twentykboxes p{
+    font-size: medium;
+}
+
+/* under 30k */
+#thirk h1{
+    text-align: center;
+}
+#thirk{
+    border: 2px solid black;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.thirkboxes{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 25px;
+    background-color: #e0e0e4;
+}
+#thirkcontainer{
+    display: flex;
+    justify-content: space-around;
+}
+.imgthirk{
+    width: 150px;
+}
+.thirkboxes p{
+    font-size: medium;
+}
+
+@media (max-width:686px){
+    #welcome{
+        font-size:40px;
+        margin-bottom: 10px;
+    }
+    #subwelcome{
+        font-size: 20px;
+    }
+    #tenkcontainer{
+        flex-wrap: wrap;
+    }
+    #fifkcontainer{
+        flex-wrap: wrap;
+    }
+    #twentykcontainer{
+        flex-wrap: wrap;
+    }
+    #thirkcontainer{
+        flex-wrap: wrap;
+    }
+    .imgtenk{
+        width: 115px;
+    }
+    .imgfifk{
+        width: 115px;
+    }
+    .imgtwentyk{
+        width: 115px;
+    }
+    .imgthirk{
+        width: 115px;
+    }
+}
+@media (max-width:512px){
+    #welcome{
+        font-size:30px;
+        margin-bottom: 10px;
+    }
+    #subwelcome{
+        font-size:17px;
+    }
+    #logo{
+        width: 45px;
+    }
+    #heading{
+        font-size: 28px;
+    }
+    #home::before{
+        height:250px;
+    }
+    .imgtenk{
+        width: 105px;
+    }
+    .imgfifk{
+        width: 105px;
+    }
+    .imgtwentyk{
+        width: 105px;
+    }
+    .imgthirk{
+        width: 105px;
+    }
+}
+@media (max-width:372px) {
+    #welcome{
+        font-size:21px;
+        margin-bottom: 10px;
+    }
+    #subwelcome{
+        font-size:15px;
+    }
+    #logo{
+        width: 35px;
+    }
+    #home{
+        margin-top:25px;
+    }
+    #heading{
+        font-size: 23px;
+    }
+    #home::before{
+        height:250px;
+    }
+    .imgtenk{
+        width: 97px;
+    }
+    .imgfifk{
+        width: 97px;
+    }
+    .imgtwentyk{
+        width: 97px;
+    }
+    .imgthirk{
+        width: 97px;
+    }
+}
+@media (max-width:274px) {
+    #welcome{
+        font-size:18px;
+        margin-bottom: 10px;
+    }
+    #subwelcome{
+        font-size:13px;
+    }
+    #logo{
+        width: 30px;
+    }
+    #home{
+        margin-top:25px;
+    }
+    #heading{
+        font-size: 20px;
+    }
+    #home::before{
+        height:220px;
+    }
+    header::before{
+        height: 65px;
+    }
+    #tenk{
+        margin-top: 20px;
+    }
+    #fifk{
+        margin-top: 20px;
+    }
+    #twentyk{
+        margin-top: 20px;
+    }
+    #thirk{
+        margin-top: 20px;
+    }
+    .imgtenk{
+        width: 88px;
+    }
+    .imgfifk{
+        width: 88px;
+    }
+    .imgtwentyk{
+        width: 88px;
+    }
+    .imgthirk{
+        width: 88px;
+    }
+}
